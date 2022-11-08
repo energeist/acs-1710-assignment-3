@@ -247,7 +247,7 @@ def gif_search():
             'gifs': gifs
         }
 
-         # Uncomment me to see the result JSON!
+        # Uncomment me to see the result JSON!
         # Look closely at the response! It's a list
         # list of data. The media property contains a 
         # list of media objects. Get the gif and use it's 
@@ -255,7 +255,7 @@ def gif_search():
         # pp.pprint(gifs)
         return render_template('gif_search.html', **context)
     else:
-        return render_template('gif_search.html', **context)
+        return render_template('gif_search.html')
 
 if __name__ == '__main__':
     app.config['ENV'] = 'development'
