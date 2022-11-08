@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Compliments Results
+{% endblock %}
+
+{% block content %}
+
+Hello {{name}}!<br>
+{% if check_box == 'yes' %}
+You are:<br>
+    <ul>    
+    {% for compliment in compliments %}
+        <li>{{compliment}}</li>
+    {% endfor %}
+    </ul>
+{% endif %}
+
+{% endblock %}
