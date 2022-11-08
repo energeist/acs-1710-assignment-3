@@ -217,7 +217,6 @@ Register and make an API key for yourself.
 Set up dotenv, create a .env file and define a variable 
 API_KEY with a value that is the api key for your account. """
 
-# AIzaSyAkQ423RWNiTnDms7AhVuK_UeEBl_GeFpY
 API_KEY = os.getenv('API_KEY')
 print(API_KEY)
 
