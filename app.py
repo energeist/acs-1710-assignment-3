@@ -7,7 +7,7 @@ import os
 import random
 import requests
 
-# load_dotenv()
+load_dotenv()
 
 
 app = Flask(__name__)
@@ -254,7 +254,7 @@ def gif_search():
         # pp.pprint(gifs)
         return render_template('gif_search.html', **context)
     else:
-        return render_template('gif_search.html', **context)
+        return render_template('gif_search.html')
 
 if __name__ == '__main__':
     app.config['ENV'] = 'development'
